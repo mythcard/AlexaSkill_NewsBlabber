@@ -1,27 +1,43 @@
 {
-  "languageModel": {
-    "intents": [
-      {
-        "name": "AMAZON.CancelIntent",
-        "samples": []
-      },
-      {
-        "name": "AMAZON.HelpIntent",
-        "samples": []
-      },
-      {
-        "name": "AMAZON.StopIntent",
-        "samples": []
-      },
-      {
-        "name": "breakingNews",
-        "samples": [
-          "What's new",
-          "What's happening"
-        ],
-        "slots": []
-      }
-    ],
-    "invocationName": "news blabber"
-  }
+  "intents": [
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "firstName",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ],
+      "intent": "getFirstName"
+    },
+    {
+      "slots": [
+        {
+          "name": "pinValue",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "getFiveDigitPin"
+    },
+    {
+      "slots": [
+        {
+          "name": "lastName",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ],
+      "intent": "getLastName"
+    },
+    {
+      "intent": "getNews"
+    }
+  ]
 }

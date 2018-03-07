@@ -1,0 +1,6 @@
+getFirstName my first name is {firstName}
+getFiveDigitPin pin goes like this {pinValue}
+getFiveDigitPin my pin is {pinValue}
+getLastName my last name is {lastName}
+getNews what is cooking
+getNews what is new
